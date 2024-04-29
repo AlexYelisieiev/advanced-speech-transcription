@@ -37,7 +37,7 @@ class SpeechRecognizer(object):
             )
             self._recognition_finished = True
             return
-        except:
+        except Exception:
             return None
 
     def _recognize_speech_in_background(self, audio: sr.AudioData) -> str:

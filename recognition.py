@@ -28,7 +28,7 @@ class SpeechRecognizer(object):
         with self.microphone as source:
             self.recognizer.adjust_for_ambient_noise(source=self.microphone, duration=2)
 
-    def _recognize_speech(self, audio: sr.AudioData) -> str:
+    def _recognize_speech(self, audio: sr.AudioData) -> None:
         """Used for the main speech recognition"""
 
         try:
@@ -51,6 +51,8 @@ class SpeechRecognizer(object):
         while not self._recognition_finished:
             sleep(1)
 
+        self._recognition_finished = False
+
         return self._recognized_speech
 
     def start_speech_recognition(self) -> None:
@@ -66,10 +68,10 @@ class SpeechRecognizer(object):
             recognized_speech = self._recognize_speech_in_background(audio)
 
             if recognized_speech:
-                print(recognized_speech, end=" ")
+                print(recognized_speech, end=" ", flush=True)
                 self.full_recognized_speech += f" {recognized_speech}"
 
-            # Chech for stop phrase
+            # Check for stop phrase
             for stop_phrase in self.STOP_PHRASES:
                 if stop_phrase in recognized_speech.lower():
                     self._stop_listening = True

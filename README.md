@@ -2,22 +2,24 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Key Features](#key-features)
-- [Getting Started](#getting-started)
- - [Prerequisites](#prerequisites)
- - [Installation](#installation)
-- [How to Use](#how-to-use)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
-- [Support and Contact](#support-and-contact) 
-## Introduction
+- [Introduction](#introduction) 📖
+- [Key Features](#key-features) 💫
+- [Getting Started](#getting-started) 🌱
+  - [Prerequisites](#prerequisites) 📋
+  - [Installation](#installation) 📥
+- [How to Use](#how-to-use) 💻
+- [Customization](#customization) 🔧
+- [Contributing](#contributing) 🤝
+- [License](#license) 📄
+- [Support and Contact](#support-and-contact) 🙌
+
+## Introduction 📖
 
 The Advanced Speech Transcription App aims for precise yet fast speech recognition using multiple threads for each phrase recorded.
-It uses OpenAI's Whisper model **locally**, so ***no API key required***.
 
-## Key Features
+It uses Whisper models **locally**.
+
+## Key Features 💫
 
 - **State-of-the-Art Transcription**: Utilizes OpenAI's Whisper models to deliver exceptionally accurate transcriptions.
 - **Real-Time Recognition**: Immediate transcription with real-time voice processing capabilities.
@@ -26,16 +28,16 @@ It uses OpenAI's Whisper model **locally**, so ***no API key required***.
 - **Custom Stop Commands**: Easily terminate transcription sessions with user-defined phrases.
 - **Persistent Output**: Automatically saves the transcribed text to your chosen destination.
 
-## Getting Started
+## Getting Started 🌱
 
-### Prerequisites
+### Prerequisites 📋
 
 Before installing the Advanced Speech Transcription App, you'll need:
 - **Python 3.9** or above
 - **Pip package manager** (usually included with Python)
 - **Microphone** (duh 😂)
 
-### Installation
+### Installation 📥
 
 ```bash
 # Clone the project repository
@@ -58,27 +60,27 @@ python main.py
 > [!NOTE]
 > Once launched for the first time, it will install the Whisper model to use locally.
 
-## How to Use
+## How to Use 💻
 
 Initiate the app and expose it to the speech source once it says "Listening:" (until then, it's adjusting the microphone to the environment). The real-time transcription will appear on your screen. To end the transcription, simply utter a predefined stop phrase, and the session will conclude, saving the transcription to the designated file.
 
-## Customization
+## Customization 🔧
 
 Personalize your experience by editing the `SpeechRecognizer` class parameters:
 - `whisper_model`: Select from [various Whisper model options](https://github.com/openai/whisper#available-models-and-languages) to match your transcription accuracy needs.
 - `output_file_path`: Designate your desired file path for storing transcripts.
 - `STOP_PHRASES`: Customize the stop phrases for an intuitive way to end transcription sessions.
 
-## Contributing
+## Contributing 🤝
 
 New PRs, feedback, etc. are always welcome.
 Also, if you want to chat or something, DMs are open 😉
 
-## License
+## License 📄
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Support and Contact
+## Support and Contact 🙌
 
 For support, feature requests, or to report a bug, please submit an issue on the GitHub repository. Create PRs if you want to add something yourself 🤝
 

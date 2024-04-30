@@ -14,7 +14,7 @@
 - [Support and Contact](#support-and-contact) 
 ## Introduction
 
-The Advanced Speech Transcription App aims for the precise yet fast speech recognition using multiple threads for each phrase recorded.
+The Advanced Speech Transcription App aims for precise yet fast speech recognition using multiple threads for each phrase recorded.
 It uses OpenAI's Whisper model **locally**, so ***no API key required***.
 
 ## Key Features
@@ -71,8 +71,8 @@ Personalize your experience by editing the `SpeechRecognizer` class parameters:
 
 ## Contributing
 
-Always welcome: new PRs, feedback, anything.
-Also, if you wanna chat or something, DMs are open 😉
+New PRs, feedback, etc. are always welcome.
+Also, if you want to chat or something, DMs are open 😉
 
 ## License
 

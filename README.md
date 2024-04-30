@@ -1,5 +1,7 @@
 # Advanced Speech Transcription App
 
+![image](https://github.com/AlexYelisieiev/advanced-speech-transcription/assets/62658287/346aa211-0b3e-460b-b769-350298dc1491)
+
 ## Table of Contents
 
 - [Introduction](#introduction-) 📖

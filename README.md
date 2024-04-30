@@ -2,16 +2,16 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction) 📖
-- [Key Features](#key-features) 💫
-- [Getting Started](#getting-started) 🌱
-  - [Prerequisites](#prerequisites) 📋
-  - [Installation](#installation) 📥
-- [How to Use](#how-to-use) 💻
-- [Customization](#customization) 🔧
-- [Contributing](#contributing) 🤝
-- [License](#license) 📄
-- [Support and Contact](#support-and-contact) 🙌
+- [Introduction](#introduction-) 📖
+- [Key Features](#key-features-) 💫
+- [Getting Started](#getting-started-) 🌱
+  - [Prerequisites](#prerequisites-) 📋
+  - [Installation](#installation-) 📥
+- [How to Use](#how-to-use-) 💻
+- [Customization](#customization-) 🔧
+- [Contributing](#contributing-) 🤝
+- [License](#license-) 📄
+- [Support and Contact](#support-and-contact-) 🙌
 
 ## Introduction 📖
 

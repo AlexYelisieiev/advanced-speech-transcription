@@ -56,7 +56,7 @@ python main.py
 ```
 
 > [!NOTE]
-> Upon launching for the first time, it will install the Whisper model to use locally.
+> Once launched for the first time, it will install the Whisper model to use locally.
 
 ## How to Use
 

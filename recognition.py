@@ -1,6 +1,7 @@
 from threading import Thread
 from time import sleep
 import speech_recognition as sr
+import config
 
 
 class SpeechRecognizer(object):
@@ -26,7 +27,14 @@ class SpeechRecognizer(object):
 
         # Adjust microphone to the environment
         with self.microphone as source:
-            self.recognizer.adjust_for_ambient_noise(source=self.microphone, duration=2)
+            print("Adjusting the microphone...")
+            self.recognizer.adjust_for_ambient_noise(source, duration=2)
+            self.recognizer.dynamic_energy_threshold = False
+            self.recognizer.energy_adjustment_during_recognition = False
+            self.recognizer.energy_threshold = config.ENERGY_TRESHOLD
+            self.recognizer.pause_threshold = config.PAUSE_TRESHOLD
+            self.recognizer.phrase_threshold = config.PHRASE_TRESHOLD
+            print("Microphone adjusted.")
 
     def _recognize_speech(self, audio: sr.AudioData) -> None:
         """Used for the main speech recognition"""

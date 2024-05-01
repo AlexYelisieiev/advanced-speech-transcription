@@ -4,7 +4,7 @@ from recognition import SpeechRecognizer
 def main():
     speech_recognizer = SpeechRecognizer(
         output_file_path="./recognized_text.txt",
-        whisper_model="base",
+        whisper_model="base.en",
     )
     speech_recognizer.start_speech_recognition()
 

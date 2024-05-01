@@ -17,7 +17,7 @@
 
 ## Introduction 📖
 
-The Advanced Speech Transcription App aims for precise yet fast speech recognition using multiple threads for each phrase recorded.
+The Advanced Speech Transcription App aims for offline, precise yet fast speech recognition using multiple threads for each phrase recorded.
 
 It uses Whisper models **locally**.
 
@@ -69,7 +69,7 @@ Initiate the app and expose it to the speech source once it says "Listening:" (u
 ## Customization 🔧
 
 Personalize your experience by editing the `SpeechRecognizer` class parameters:
-- `whisper_model`: Select from [various Whisper model options](https://github.com/openai/whisper#available-models-and-languages) to match your transcription accuracy needs.
+- `whisper_model`: Select from [various Whisper model options](https://github.com/openai/whisper#available-models-and-languages) to match your transcription accuracy and language needs.
 - `output_file_path`: Designate your desired file path for storing transcripts.
 - `STOP_PHRASES`: Customize the stop phrases for an intuitive way to end transcription sessions.
 

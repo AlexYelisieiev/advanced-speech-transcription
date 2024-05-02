@@ -9,10 +9,6 @@ class SpeechRecognizer(object):
     STOP_PHRASES = [
         "stop recording",
         "stop listening",
-        "закончи аудиозапись",
-        "останови аудиозапись",
-        "закінчи запис",
-        "зупини запис",
     ]
 
     def __init__(self, whisper_model: str, output_file_path: str) -> None:

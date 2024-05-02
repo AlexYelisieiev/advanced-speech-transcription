@@ -11,6 +11,8 @@ class SpeechRecognizer(object):
         "stop listening",
     ]
 
+    thread_count = 0
+
     def __init__(self, whisper_model: str, output_file_path: str) -> None:
         self.output_file_path = output_file_path
         self.recognizer = sr.Recognizer()
@@ -39,6 +41,7 @@ class SpeechRecognizer(object):
             self._recognized_speech = self.recognizer.recognize_whisper(
                 audio_data=audio, model=self.whisper_model
             )
+            SpeechRecognizer.thread_count -= 1
             self._recognition_finished = True
             return
         except Exception:
@@ -50,6 +53,7 @@ class SpeechRecognizer(object):
         # Start speech recognition
         thread = Thread(target=self._recognize_speech, args=(audio,))
         thread.start()
+        SpeechRecognizer.thread_count += 1
 
         # Wait until the speech is recognized
         while not self._recognition_finished:

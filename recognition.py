@@ -80,7 +80,7 @@ class SpeechRecognizer(object):
                 self.full_recognized_speech += f" {recognized_speech}"
 
             # Check for stop phrase
-            for stop_phrase in self.STOP_PHRASES:
+            for stop_phrase in SpeechRecognizer.STOP_PHRASES:
                 if stop_phrase in recognized_speech.lower():
                     self._stop_listening = True
 
@@ -88,7 +88,7 @@ class SpeechRecognizer(object):
         if self.full_recognized_speech:
             # Prepare `full_recognized_speech` for writing
             self.full_recognized_speech.replace("  ", " ")
-            for stop_phrase in self.STOP_PHRASES:
+            for stop_phrase in SpeechRecognizer.STOP_PHRASES:
                 self.full_recognized_speech = self.full_recognized_speech.replace(
                     stop_phrase, ""
                 )
